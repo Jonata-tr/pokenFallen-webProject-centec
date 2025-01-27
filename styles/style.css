@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;500;700&display=swap');
+
+@import './nav.css';
+@import './home.css';
+@import './footer.css';
+
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	font-family: sans-serif;
+}
+
+body{
+	overflow-x: hidden;
+}
+
+
+.col-12{
+  max-width: 1200px;
+
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.left-icon::before{
+	content: '';
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+
+	margin-right: 15px;
+
+	text-align: center;
+	background-image: url('../assets/pokeball\ \(1\).png');
+	background-size: cover; /* Adjusts the image to cover the entire area */
+	background-position: center;
+
+  transition: .2s ease-in;
+}
+
+.left-icon:hover::before{
+  rotate: 360deg;
+  
+  margin-right: 5px;
+}
+
+.about-upgrades img{
+	width: 60px;
+}
+
+nav img{
+  width: 40px;
+}
+
+.ft-32{
+	font-size: 2rem;
+}
+
+.bangers-regular {
+  font-family: "Bangers", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #d89400;
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0;
+  color: #313131;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #d89400;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #d89400;
+  border: 1px solid #d89400;
+}
+
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: #d89400;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+.wrapper{
+  padding: 20px 32px 60px;
+}

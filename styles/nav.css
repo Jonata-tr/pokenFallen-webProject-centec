@@ -1,6 +1,6 @@
 nav{
 	width: 100vw;
-	height: 8vh;
+	height: 6vh;
 
 	position: fixed;
 	top: 0;
@@ -20,12 +20,17 @@ nav{
 	padding: 0 320px;
 }
 
-nav a{
+nav a, nav p{
 	display: flex;
+	align-content: center;
 	align-items: center;
 
 	text-decoration: none;
 	color: white;
+
+	font-size: 1.125rem;
+	padding: 10px 20px;
+
 }
 
 .nav-links{
@@ -39,10 +44,8 @@ nav a{
 
 	position: relative;
 
-	padding: 10px 20px;
 
 	
-	font-size: 1.125rem;
 
 	cursor: pointer;
 }
@@ -79,4 +82,29 @@ nav a{
 
 .nav-dropdown.hidden{
 	display: none;
+}
+
+#userButtons{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	gap: 	16px;
+}
+
+#register{
+	background: #d89400;
+	
+	border-radius: 6px;
+
+	transition:background .2s ease-in-out;
+}
+#register:hover{
+	background: linear-gradient(45deg, #921b06, #df5f5f);
+	
+	border-radius: 6px;
+}
+#login:hover{
+	border-bottom: 4px solid #921b06;
+
+	border-radius: 12px;
 }

@@ -15,7 +15,7 @@
   <body>
     <header>
       <nav>
-        <a href="#" class="bangers-regular ft-32">
+        <a href="./index.html" class="bangers-regular ft-32">
           <img src="./assets/pokeball.png" alt="" />
           PokenFallen
         </a>
@@ -24,34 +24,32 @@
           <li class="nav-link">
             <p>Introdução</p>
             <div class="nav-dropdown intro-drop hidden">
-              <a href="">Fallen RPG</a>
-              <a href="">Sinopse</a>
-              <a href="">Sistemas</a>
-              <a href="">Dúvidas</a>
+              <a href="#about">Fallen RPG</a>
+              <a href="#upgrades">Sistemas</a>
+              <a href="#info">Informações</a>
+              <a href="#faq">Dúvidas</a>
             </div>
           </li>
 
           <li class="nav-link">
             <p>Download</p>
             <div class="nav-dropdown download-drop hidden">
-              <a href="">Download</a>
+              <a href="./download.html#download">Download</a>
               <a href="">Android</a>
               <a href="">Tutorial</a>
             </div>
           </li>
 
-          <li class="pdc-8">
-            <a href="">Fallen Shop</a>
-          </li>
-
-          <li class="pdc-8">
-            <a href="">Saves e Progresso</a>
-          </li>
-
-          <li class="pdc-8">
+          <li id="marginR-12">
             <a href="">Atualizações</a>
           </li>
+
+          
         </ul>
+        <div id="userButtons">
+          <a href="./login.html" id="login">Login</a>
+          <a href="./register.html" id="register">Registrar</a>
+        </div>
       </nav>
     </header>
 
@@ -59,13 +57,14 @@
       <div class="home-parallax">
         <div class="parallax-section parallax1"></div>
         <h1 class="logo home-logo bangers-regular">
-          PokenFallen RPG<span>A AVENTURA ESTA A UM CLICK</span>
+          <img src="./assets/pokeball.png" alt="" style="width: 120px;"/>
+          PokenFallen RPG
         </h1>
       </div>
 
       <!-- aqui vai o carrocel -->
 
-      <div class="home-about">
+      <div class="home-about" id="about">
         <div class="col-12 home-adventure">
           <h2 class="left-icon">Venha se aventurar nesse mundo!</h2>
           <p>
@@ -76,7 +75,7 @@
           </p>
         </div>
 
-        <div class="col-12 home-whatIs">
+        <div class="col-12 home-whatIs" id="upgrades">
           <h2 class="left-icon">O que é o PokenFallen?</h2>
           <p>
             É um jogo criado do zero por fãs, aqui temos uma mistura de
@@ -88,7 +87,7 @@
         </div>
       </div>
 
-      <div class="about-upgrades">
+      <div class="about-upgrades" >
         <ul class="upgrades-container col-12">
           <li class="upgrade-items">
             <img src="./assets/controller-svgrepo-com.svg" alt="" />
@@ -117,7 +116,7 @@
         </ul>
       </div>
 
-      <div class="about-historia">
+      <div class="about-historia" id="info">
         <div class="col-12">
           <h2 class="left-icon">Sinopse</h2>
           <p>
@@ -131,7 +130,7 @@
         </div>
       </div>
 
-      <div class="about-news">
+      <div class="about-news" id="news">
         <div class="col-12">
           <h2 class="left-icon">Atualizações e novidades</h2>
 

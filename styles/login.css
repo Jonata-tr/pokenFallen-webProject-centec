@@ -1,0 +1,141 @@
+#login-body{
+	width: 100vw;
+	height: 100vh;
+
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #f7ede1;
+}
+
+#login-page{
+	width: 400px;
+	height: fit-content;
+
+	background-color: white;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	border: 2px solid #dbb64e;
+	border-radius: 20px;
+	
+	padding: 40px;
+}
+
+.login-logo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	margin-bottom: 32px;
+}
+
+.login-logo h1{
+	font-size: 2rem;
+	letter-spacing: 4px;
+}
+
+/* INPUTS */
+
+.login-form{
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.login-forgot{
+	align-self: flex-end;
+
+	font-size: .850rem;
+	color: #dbb64e;
+	text-decoration: none;
+
+	margin-top: 6px;
+	margin-bottom: 40px;
+}
+
+
+.login-register{
+	text-decoration: none;
+	color: black;
+}
+
+.login-register span{
+	color: #dbb64e;
+	text-decoration: underline;
+	font-size: 1.125rem;
+}
+
+/* INPUTS, LABELS AND HOVER AND FOCUS STATES */
+.inputs-wrapper{
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	margin: 10px 0;
+
+	width: 100%;
+}
+
+.inputs-wrapper label{
+	padding: 2px 4px;
+
+	text-transform: uppercase;
+	font-size: .725rem;
+
+	letter-spacing: 2.5px;
+}
+
+.inputs-wrapper input{
+	width: 100%;
+
+	padding: 10px;
+
+	border: 2px solid #d89400;
+	border-radius: 10px;
+}
+
+.inputs-wrapper input:hover{
+	border: 2px solid #ffae00;
+}
+.inputs-wrapper input:focus{
+	outline: 2px solid #fddf9c;
+}
+
+.button-main-color{
+	width: 180px;
+	height: 40px;
+
+	cursor: pointer;
+	
+	align-self: center;
+
+	background-color: #dbb64e;
+	border: 2px solid rgba(255, 255, 255, 0);
+	border-radius: 16px;
+
+	color: white;
+
+	box-shadow: 0px 5px 10px -5px black;
+	padding: 10px 40px;
+
+	margin-bottom: 40px;
+
+	transition: background .2s ease-in-out;
+
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.button-main-color:hover{
+	border:2px solid #fddf9c;
+
+	background: linear-gradient(180deg, rgba(219,182,78,1) 33%, rgba(255,203,97,1) 57%, rgba(251,255,150,1) 100%);
+}

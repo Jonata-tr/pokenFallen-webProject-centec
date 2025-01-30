@@ -3,6 +3,8 @@
 @import './nav.css';
 @import './home.css';
 @import './footer.css';
+@import './login.css';
+@import './register.css';
 
 *{
 	box-sizing: border-box;
@@ -10,9 +12,14 @@
 	margin: 0;
 
 	font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 body{
+
+  height: 92vh;
+
+  background-color: #ffffff;
 	overflow-x: hidden;
 }
 
@@ -24,6 +31,10 @@ body{
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.marginR-12{
+  margin-right: 12px;
 }
 
 
@@ -100,7 +111,7 @@ nav img{
   text-align: left;
   width: 100%;
   padding: 1rem 0;
-  color: #313131;
+  color: #be7878;
   font-size: 1.15rem;
   font-weight: 400;
   border: none;

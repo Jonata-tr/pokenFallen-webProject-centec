@@ -1,0 +1,103 @@
+#register-page{
+	display: flex;
+
+}
+
+
+.left-collumn{
+	height: 100vh;
+	width: 30vw;
+	
+	background-image: url('../assets/R.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 70% center;
+}
+
+.rigth-collum{
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 70vw;
+
+	
+	background: white;
+}
+
+.rigth-wrapper{
+	position: relative;
+
+	width: 480px;
+	height: fit-content;
+
+	padding: 20px 40px;
+
+	border: 2px solid #dbb64e;
+	border-radius: 20px;
+
+	background: #f7ede1;
+}
+
+.rigth-wrapper h1{
+	text-align: center;
+}
+
+.rigth-collum::after{
+	content: '';
+	position: absolute;
+	width: 60px;
+	height: 100%;
+	left: 0;
+	background: red;
+}
+.rigth-collum::before{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	left: 60px;
+	background: black;
+}
+
+.span-form-info{
+	position: absolute;
+
+	top: -30px;
+	right: 10px;
+
+	color: #b3b3b3;
+	text-decoration: none;
+}
+
+.span-form-info span{
+	font-weight: bold;
+	
+	text-decoration: underline;
+	color: #b3b3b3;
+}
+
+.register-form{
+	display: grid;
+	column-gap: 20px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(auto);
+}
+
+.register-form .inputs-wrapper:first-of-type{
+	grid-column: 1/3;
+}
+
+#register-body .button-main-color{
+	grid-column: 1/3;
+
+	justify-self: center;
+}
+
+#register-body .button-main-color{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}

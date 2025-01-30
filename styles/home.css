@@ -1,8 +1,8 @@
 .parallax-section{
-	margin-top: 76px;
+	margin-top: 50px;
 
 	width: 100vw;
-	height: 92vh;
+	height: 40vh;
 
 	display: flex;
 	flex-direction: column;
@@ -22,38 +22,27 @@
 
 .logo{
 	position: absolute;
-  top: 50%;
+  top: 150px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 
 
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	
+	gap: 20px;
+
 	font-size: 5.125rem;
 	
 	letter-spacing: 6px;
 	
 	color: #d89400;
-	border: 8px solid #8f2142;
 	
 	padding: 20px;
-	backdrop-filter: blur(4px) saturate(60%);
 	text-shadow: -4px 4px 0 #000, 4px 4px 0 #000, 4px -4px 0 #000, -4px -4px 0 #000;
 	
+	user-select: none;
 	z-index: 999;
 }
-
-.logo span{
-	font-size: 1rem;
-
-	color: brown;
-	font-weight: bold;
-
-	text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
-}
-
 
 #home h2{
 	font-size: 2rem;
@@ -61,10 +50,10 @@
 
 .home-about{
 	position: relative;
-	padding: 40px 0 80px;
+	margin-bottom: 80px;
 
 	border-radius: 20px 20px 0px 0px;
-	box-shadow: 0px 80px 100px 100px rgb(0, 0, 0);
+	box-shadow: 0px -200px 200px 20px rgba(0, 0, 0, 0.74);
 
 	background: #fff;
 }
@@ -93,24 +82,6 @@
 	padding: 60px 0;
 
 }
-.about-historia::before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: -10px;
-	right: -5px;
-
-	width: 100vw;
-	height: 10px;
-	
-	background: red;
-}
-
-.about-upgrades{
-	position: relative;
-
-	background-image: url('../assets/icegif-1025.gif');
-}
 
 
 .about-upgrades .upgrades-container{
@@ -120,20 +91,8 @@
 
 	list-style: none;
 
-	padding: 40px 0px;
 
-}
-.about-upgrades::before{
-	content: '';
-	display: block;
-	position: absolute;
-	top: -10px;
-	right: -5px;
-
-	width: 100vw;
-	height: 10px;
-	
-	background: red;
+	margin-bottom: 20px;
 }
 
 .upgrade-items{
@@ -143,25 +102,27 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 20px;
+	gap: 28px;
 
 	font-size: 1.250rem;
 	text-align: center;
 	color: rgb(0, 0, 0);
 
 
-	border: 2px solid black;
+	border: 4px solid #dbb64e;
 	border-radius: 20px;
-	background: #c2c2c2;
+	background: #ffffff;
 
 	transition: background .3s ease-in-out;
 }
 .upgrade-items:hover{
-	background: #d89400;
+	background: #252525;
+
+	color: white;
 }
 
 .upgrade-items p{
-	border-top: 4px solid rgb(219, 182, 78);
+	border-top: 4px solid #dbb64e;
 	padding-top: 28px;
 }
 .home-about p, .about-historia p, .news-item{

@@ -1,64 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PokenFallen - rpg</title>
-
-    <link rel="stylesheet" href="./styles/style.css" />
-
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="./index.html" class="bangers-regular ft-32">
-          <img src="./assets/pokeball.png" alt="" />
-          PokenFallen
-        </a>
-
-        <ul class="nav-links">
-          <li class="nav-link">
-            <p>Introdução</p>
-            <div class="nav-dropdown intro-drop hidden">
-              <a href="#about">Fallen RPG</a>
-              <a href="#upgrades">Sistemas</a>
-              <a href="#info">Informações</a>
-              <a href="#faq">Dúvidas</a>
-            </div>
-          </li>
-
-          <li class="nav-link">
-            <p>Download</p>
-            <div class="nav-dropdown download-drop hidden">
-              <a href="./download.html#download">Download</a>
-              <a href="">Android</a>
-              <a href="">Tutorial</a>
-            </div>
-          </li>
-
-          <li id="marginR-12">
-            <a href="">Atualizações</a>
-          </li>
-
-          
-        </ul>
-        <div id="userButtons">
-          <a href="./login.html" id="login">Login</a>
-          <a href="./register.html" id="register">Registrar</a>
-        </div>
-      </nav>
-    </header>
-
+    <?php 
+      include "./layouts/header.php";
+    ?>
+    
     <section id="home">
       <div class="home-parallax">
         <div class="parallax-section parallax1"></div>
         <h1 class="logo home-logo bangers-regular">
           <img src="./assets/pokeball.png" alt="" style="width: 120px;"/>
-          PokenFallen RPG
+          PokenFallen
         </h1>
       </div>
 
@@ -255,18 +204,7 @@
       </div>
     </section>
 
-    <footer>
-      <p class="col-12">
-        Community Fallen RPG BRAZIL fan site - Contact:
-        pokefallen28@gmail.com<br /><br />
-        Pokémon Copyright © 1995 - 2017 Nintendo/Creatures Inc./GAME FREAK Inc.
-        Pokémon And All Respective Names are Trademarks of Nintendo 1996-2016
-        Fallen RPG is not affiliated with Nintendo, Creatures Inc. and GAME
-        FREAK Inc.
-      </p>
-    </footer>
-  </body>
+    <?php 
+      include "./layouts/footer.php";
+    ?>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./script.js"></script>
-</html>

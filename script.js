@@ -1,21 +1,27 @@
+const dropDown = document.querySelectorAll(".dropdown_button");
 
+dropDown.forEach((drop) => {
+  drop.addEventListener("click", () => {
+    let dropMenu = drop.children[1];
 
-const navs = document.querySelectorAll('.nav-link')
+    dropDown.forEach((close) => {
+      if (close != drop) {
+        let dropRemove = close.children[1];
+        dropRemove.classList.add("hidden");
+      }
+    });
 
-navs.forEach(nav => {
-	nav.addEventListener("click", () => {
-		
-		let drop = nav.children[1];
-		drop.classList.toggle('hidden')		
-	})
-})
+    console.log(dropMenu);
 
+    dropMenu.classList.toggle("hidden");
+  });
+});
 
 const acordionButtons = document.querySelectorAll(".accordion-item button");
 
-
-acordionButtons.forEach(button => {
-	button.addEventListener('click', () => {
-		const isExpanded = button.getAttribute('aria-expanded') === 'true';      button.setAttribute('aria-expanded', !isExpanded);
-	})
-})
+acordionButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const isExpanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", !isExpanded);
+  });
+});

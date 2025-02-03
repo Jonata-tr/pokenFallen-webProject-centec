@@ -24,6 +24,7 @@ nav a, nav p{
 	display: flex;
 	align-content: center;
 	align-items: center;
+	justify-content: flex-end;
 
 	text-decoration: none;
 	color: white;
@@ -43,16 +44,12 @@ nav a, nav p{
 .nav-links li{
 
 	position: relative;
-
-
-	
-
 	cursor: pointer;
 }
 
 .nav-links li div{
 	position: absolute;
-	left: -1px;
+	right: -1px;
 	top: 100%;
 	
 	
@@ -107,4 +104,65 @@ nav a, nav p{
 	border-bottom: 4px solid #921b06;
 
 	border-radius: 12px;
+}
+
+.user-profile{
+	padding: 4px 10px;
+	border: 1px solid #131313;
+
+	position: relative;
+}
+
+.user-profile > .nav-dropdown{
+	position: absolute;
+	top: 43px;
+	right: 0;
+
+	background: #131313;
+}
+
+.user-profile:hover{
+	border: 1px dotted #d89400;
+}
+
+.user-profile, .user-info{
+	display: flex;
+	align-items: center;
+	align-content: center;
+
+	justify-items: center;
+}
+
+.user-info{
+	gap: 10px;
+}
+
+.user-info span{
+	padding: 8px 4px; 
+}
+
+.user-info img{
+	width: 32px;
+	height: 32px;
+
+	background: rgb(85, 85, 85);
+	border: 2px solid #d89400;
+	border-radius: 50%;
+}
+
+.login_error_message{
+	width: 100%;
+
+	font-size: .825rem;
+
+	background: #df5f5fb9;
+
+	padding: 16px 8px;
+
+	outline: 2px solid #ff2600;
+	border-radius:8px;
+
+	color: rgb(255, 255, 255);
+
+	margin-bottom: 16px;
 }
